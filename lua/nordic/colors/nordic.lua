@@ -1,5 +1,6 @@
 -- The Nord palette: https://www.nordtheme.com/.
 -- This file has a bunch of added colors.
+-- Colors adapted from Nord Aurora Darker VSCode theme.
 
 -- NOTE: All hex codes must be uppercase (for testing)
 ---@class BasePalette
@@ -7,74 +8,66 @@ local palette = {
 
     none = 'NONE',
 
-    -- Blacks. Not in base Nord.
-    black0 = '#191D24',
-    black1 = '#1E222A',
-    -- Slightly darker than bg.  Very useful for certain popups
-    black2 = '#222630',
+    -- Backgrounds from Nord Aurora Darker
+    black0 = '#212732', -- panel.background
+    black1 = '#1E222A', -- (existing)
+    black2 = '#222630', -- (existing)
 
     -- Grays
-    -- This color is used on their website's dark theme.
-    gray0 = '#242933', --bg
-    -- Polar Night.
-    gray1 = '#2E3440',
-    gray2 = '#3B4252',
-    gray3 = '#434C5E',
-    gray4 = '#4C566A',
+    gray0 = '#282D38', -- editor.background
+    gray1 = '#2F343F', -- sideBar.background
+    gray2 = '#3B4252', -- (existing)
+    gray3 = '#434C5E', -- (existing)
+    gray4 = '#4C566A', -- editorWhitespace.foreground
 
-    -- A light blue/gray.
-    -- From @nightfox.nvim.
-    gray5 = '#60728A',
+    -- Comments from Nord Aurora Darker
+    gray5 = '#5B6271', -- comment foreground
 
-    -- Dim white.
-    -- default fg, has a blue tint.
-    white0_normal = '#BBC3D4',
-    -- less blue tint
-    white0_reduce_blue = '#C0C8D8',
+    -- Foreground from Nord Aurora Darker
+    white0_normal = '#D8DEE9', -- editor.foreground
+    white0_reduce_blue = '#D8DEE9', -- editor.foreground
 
-    -- Snow storm.
+    -- Snow storm (existing, but white0 is now the main fg)
     white1 = '#D8DEE9',
     white2 = '#E5E9F0',
     white3 = '#ECEFF4',
 
-    -- Frost.
-    blue0 = '#5E81AC',
-    blue1 = '#81A1C1',
-    blue2 = '#88C0D0',
+    -- Frost colors from Nord Aurora Darker
+    blue0 = '#5E81AC', -- button.background
+    blue1 = '#61AFEF', -- functions
+    blue2 = '#75BEFF', -- editorInfo.foreground
 
     cyan = {
-        base = '#8FBCBB',
-        bright = '#9FC6C5',
-        dim = '#80B3B2',
+        base = '#8FBCBB', -- editorCursor.foreground
+        bright = '#88C0D0', -- (existing)
+        dim = '#56B6C2', -- regexp
     },
 
-    -- Aurora.
-    -- These colors are used a lot, so we need variations for them.
-    -- Base colors are from original Nord palette.
+    -- Aurora
     red = {
-        base = '#BF616A',
-        bright = '#C5727A',
-        dim = '#B74E58',
+        base = '#D5667A', -- variables
+        bright = '#D16978', -- tags
+        dim = '#BF6161', -- editorError.foreground
     },
     orange = {
-        base = '#D08770',
-        bright = '#D79784',
-        dim = '#CB775D',
+        base = '#D08D6A', -- numeric/constants
+        bright = '#F2AE72', -- editorWarning.foreground
+        dim = '#CB775D', -- (existing)
     },
     yellow = {
-        base = '#EBCB8B',
-        bright = '#EFD49F',
-        dim = '#E7C173',
+        base = '#EBCB8B', -- types/classes
+        bright = '#EFD49F', -- (existing)
+        dim = '#E7C173', -- (existing)
     },
     green = {
-        base = '#A3BE8C',
-        bright = '#B1C89D',
-        dim = '#97B67C',
+        base = '#A3BE8C', -- strings
+        bright = '#B1C89D', -- (existing)
+        dim = '#97B67C', -- (existing)
     },
     magenta = {
-        base = '#B48EAD',
-        bright = '#BE9DB8',
-        dim = '#A97EA1',
+        base = '#B48EAD', -- keywords
+        bright = '#BE9DB8', -- (existing)
+        dim = '#A97EA1', -- (existing)
     },
 }
 
