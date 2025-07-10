@@ -155,8 +155,8 @@ function M.get_groups()
     -- TermCursor  = { } -- cursor in a focused terminal
     -- TermCursorNC= { } -- cursor in an unfocused terminal
     G.ErrorMsg = { fg = C.error } -- error messages on the command line
-    G.VertSplit = { fg = C.white1 } -- the column separating vertically split windows
-    G.WinSeparator = { fg = C.white1 } -- the column separating vertically split windows
+    G.VertSplit = { fg = C.gray4 } -- the column separating vertically split windows
+    G.WinSeparator = { fg = C.gray4 } -- the column separating vertically split windows
     G.Folded = { fg = C.fg_fold, bg = C.bg_fold } -- line used for closed folds
     G.FoldColumn = { bg = C.bg_fold, fg = C.fg_fold } -- 'foldcolumn'
     G.SignColumn = { bg = C.bg_sidebar, fg = C.fg_sidebar } -- column where |signs| are displayed
