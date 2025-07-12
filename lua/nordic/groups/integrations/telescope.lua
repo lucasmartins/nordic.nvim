@@ -12,7 +12,7 @@ function M.get()
     G.TelescopeResultsNormal = { bg = C.bg }
     G.TelescopePreviewNormal = { bg = C.bg }
     G.TelescopePreviewLine = { bg = C.gray2 }
-    G.TelescopeSelection = { bg = C.bg, fg = C.yellow.bright, bold = false }
+    G.TelescopeSelection = { bg = C.black1, fg = C.yellow.bright, bold = false }
     G.TelescopeSelectionCaret = { fg = C.yellow.bright, bg = C.bg, bold = true }
     G.TelescopePreviewTitle = { fg = C.white0, bg = C.bg, bold = true }
     G.TelescopeResultsTitle = { fg = C.white0, bg = C.bg, bold = true }
